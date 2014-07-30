@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:roundr="roundrprefs"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="圆角设置">
-        <CheckBoxPreference android:title="是否开启圆角" android:key="enable" android:defaultValue="true" />
-        <CheckBoxPreference android:title="是否将状态包括其中" android:key="overlap2" android:defaultValue="false" />
-    </PreferenceCategory>
-</PreferenceScreen>

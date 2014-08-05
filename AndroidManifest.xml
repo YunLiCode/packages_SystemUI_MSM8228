@@ -50,7 +50,7 @@
     <uses-permission android:name="android.permission.READ_DREAM_STATE"/>
     <uses-permission android:name="android.permission.WRITE_DREAM_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS"/>
-    <application android:allowBackup="false" android:allowClearUserData="false" android:hardwareAccelerated="true" android:icon="@android:drawable/platlogo" android:label="@string/app_label" android:persistent="true" android:supportsRtl="true">
+    <application android:allowBackup="false" android:allowClearUserData="false" android:hardwareAccelerated="true" android:icon="@android:drawable/quickcontact_badge_overlay_light" android:label="@string/app_label" android:persistent="true" android:supportsRtl="true">
         <service android:exported="true" android:name="SystemUIService"/>
         <service android:exported="false" android:name=".screenshot.TakeScreenshotService" android:process=":screenshot"/>
         <service android:exported="true" android:name=".LoadAverageService"/>
@@ -60,7 +60,7 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
-        <activity android:excludeFromRecents="true" android:label="@android:string/usb_storage_activity_title" android:name=".usb.UsbStorageActivity"/>
+        <activity android:excludeFromRecents="true" android:label="@android:string/find_on_page" android:name=".usb.UsbStorageActivity"/>
         <activity android:excludeFromRecents="true" android:name="com.android.internal.app.ExternalMediaFormatActivity" android:theme="@android:style/Theme.Dialog.Alert"/>
         <activity android:excludeFromRecents="true" android:exported="true" android:label="@string/accessibility_desc_recent_apps" android:launchMode="singleInstance" android:name=".recent.RecentsActivity" android:theme="@style/RecentsStyle">
             <intent-filter>

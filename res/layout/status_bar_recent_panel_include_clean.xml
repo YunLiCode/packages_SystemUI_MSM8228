@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:background="@drawable/clean_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+<FrameLayout  android:layout_width="fill_parent" android:background="@drawable/clean_recents_bg" android:layout_height="fill_parent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="24.0dip" layout="@layout/status_bar_recent_panel" />
-    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/clean_recents_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <ImageButton android:layout_gravity="center_horizontal" android:id="@id/clean_recents_btn" android:background="@null" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/ic_clean_recents" android:scaleType="centerInside" />
+    <include 
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="bottom"
+    	android:layout_marginBottom="130dip"
+    	layout="@layout/status_bar_recent_panel" />
+    <FrameLayout 
+    	android:layout_gravity="bottom"  
+    	android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content">
+        <ImageButton 
+        	android:layout_gravity="center_horizontal" 
+        	android:id="@id/clean_recents_btn" 
+        	android:background="@null" 
+        	android:layout_width="64.0dip" 
+        	android:layout_height="64.0dip" 
+        	android:src="@drawable/ic_clean_recents" 
+        	android:scaleType="centerInside" />
     </FrameLayout>
 </FrameLayout>

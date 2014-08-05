@@ -1238,6 +1238,7 @@
     <public type="id" name="maximize" id="0x7f0700f1" />
     <public type="id" name="body" id="0x7f0700f2" />
     <public type="id" name="corner" id="0x7f0700f3" />
+    <public type="id" name="tvAvailMemory" id="0x7f0700f4" />
     <public type="color" name="notification_panel_solid_background" id="0x7f080000" />
     <public type="color" name="status_bar_recents_app_label_color" id="0x7f080001" />
     <public type="color" name="notification_list_shadow_top" id="0x7f080002" />

@@ -242,4 +242,5 @@
     <item type="id" name="maximize">false</item>
     <item type="id" name="body">false</item>
     <item type="id" name="corner">false</item>
+    <item type="id" name="tvAvailMemory">false</item>
 </resources>

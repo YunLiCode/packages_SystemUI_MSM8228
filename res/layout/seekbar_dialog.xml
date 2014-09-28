@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/yun_brightness_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/ic_qs_brightness_auto_off" />
+    <SeekBar android:id="@id/yun_brightness_seekbar" android:layout_width="180.0dip" android:layout_height="wrap_content" android:max="255" android:layout_toRightOf="@id/yun_brightness_image" />
+</RelativeLayout>

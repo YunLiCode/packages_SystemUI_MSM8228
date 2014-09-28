@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="status_bar_edge_ignore">5.0dip</dimen>
-    <dimen name="status_bar_recents_app_icon_max_width">58.0dip</dimen>
-    <dimen name="status_bar_recents_app_icon_max_height">58.0dip</dimen>
-    <dimen name="status_bar_recents_thumbnail_width">164.0dip</dimen>
-    <dimen name="status_bar_recents_thumbnail_height">145.0dip</dimen>
+    <dimen name="status_bar_recents_app_icon_max_width">0.0dip</dimen>
+    <dimen name="status_bar_recents_app_icon_max_height">0.0dip</dimen>
+    <dimen name="status_bar_recents_thumbnail_width">144.0dip</dimen>
+    <dimen name="status_bar_recents_thumbnail_height">288.0dip</dimen>
     <dimen name="status_bar_recents_thumbnail_bg_padding">4.0dip</dimen>
     <dimen name="status_bar_recents_app_label_text_size">14.0dip</dimen>
     <dimen name="status_bar_recents_app_description_text_size">14.0dip</dimen>
@@ -72,4 +72,5 @@
     <dimen name="qs_tile_margin_below_icon">17.0dip</dimen>
     <dimen name="qs_tile_icon_size">32.0dip</dimen>
     <dimen name="scroll_view_margin_bottom">52.0dip</dimen>
+    <dimen name="drawable_ring_size">4.0dip</dimen>
 </resources>

@@ -62,7 +62,7 @@
         </receiver>
         <activity android:excludeFromRecents="true" android:label="@android:string/find_on_page" android:name=".usb.UsbStorageActivity"/>
         <activity android:excludeFromRecents="true" android:name="com.android.internal.app.ExternalMediaFormatActivity" android:theme="@android:style/Theme.Dialog.Alert"/>
-        <activity android:excludeFromRecents="true" android:exported="true" android:label="@string/accessibility_desc_recent_apps" android:launchMode="singleInstance" android:name=".recent.RecentsActivity" android:theme="@style/RecentsStyle">
+        <activity android:excludeFromRecents="true" android:exported="true" android:label="@string/accessibility_desc_recent_apps" android:launchMode="singleInstance" android:name=".recent.RecentsActivity" android:screenOrientation="portrait" android:theme="@style/RecentsStyle">
             <intent-filter>
                 <action android:name="com.android.systemui.TOGGLE_RECENTS"/>
             </intent-filter>

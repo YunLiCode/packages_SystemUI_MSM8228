@@ -15,6 +15,10 @@
     <public type="attr" name="border_thickness" id="0x7f01000c" />
     <public type="attr" name="border_inside_color" id="0x7f01000d" />
     <public type="attr" name="border_outside_color" id="0x7f01000e" />
+    <public type="attr" name="above_wave_color" id="0x7f01000f" />
+    <public type="attr" name="blow_wave_color" id="0x7f010010" />
+    <public type="attr" name="progress" id="0x7f010011" />
+    <public type="attr" name="waveViewStyle" id="0x7f010012" />
     <public type="drawable" name="bugdroid" id="0x7f02000e" />
     <public type="drawable" name="compat_mode_help_bg" id="0x7f020012" />
     <public type="drawable" name="jandycane" id="0x7f02010e" />
@@ -87,6 +91,7 @@
     <public type="drawable" name="notification_header_bg" id="0x7f0202f9" />
     <public type="drawable" name="system_bar_background" id="0x7f0202fa" />
     <public type="drawable" name="notification_icon_area_smoke" id="0x7f0202fb" />
+    <public type="drawable" name="water" id="0x7f020377" />
     <public type="drawable" name="ic_qs_signal_2g" id="0x7f020086" />
     <public type="drawable" name="ic_qs_signal_full_2g" id="0x7f020090" />
     <public type="drawable" name="ic_qs_signal_full_hp" id="0x7f020098" />
@@ -472,7 +477,6 @@
     <public type="drawable" name="ic_launcher_settings" id="0x7f02001d" />
     <public type="drawable" name="ic_menu_share" id="0x7f02001e" />
     <public type="drawable" name="ic_notification_dnd" id="0x7f02001f" />
-    <public type="drawable" name="ic_qs_battery_57" id="0x7f020043" />
     <public type="drawable" name="ic_qs_general_on" id="0x7f020060" />
     <public type="drawable" name="ic_qs_meeting_on" id="0x7f020069" />
     <public type="drawable" name="ic_qs_outdoor_on" id="0x7f02007c" />
@@ -641,6 +645,7 @@
     <public type="drawable" name="ic_qs_battery_15" id="0x7f020040" />
     <public type="drawable" name="ic_qs_battery_28" id="0x7f020041" />
     <public type="drawable" name="ic_qs_battery_43" id="0x7f020042" />
+    <public type="drawable" name="ic_qs_battery_57" id="0x7f020043" />
     <public type="drawable" name="ic_qs_battery_71" id="0x7f020044" />
     <public type="drawable" name="ic_qs_battery_85" id="0x7f020045" />
     <public type="drawable" name="ic_qs_battery_bang_orange" id="0x7f020046" />
@@ -902,6 +907,7 @@
     <public type="drawable" name="zzz_flight_mode_off" id="0x7f020374" />
     <public type="drawable" name="zzz_flight_mode_on" id="0x7f020375" />
     <public type="drawable" name="zzz_meeting_profile_enable" id="0x7f020376" />
+    <public type="drawable" name="line_bg" id="0x7f020378" />
     <public type="mipmap" name="ic_daydreams" id="0x7f030000" />
     <public type="mipmap" name="ic_launcher_dreams" id="0x7f030001" />
     <public type="layout" name="battery_low" id="0x7f040000" />
@@ -968,6 +974,7 @@
     <public type="layout" name="corner" id="0x7f04003d" />
     <public type="layout" name="drop_down_list_item" id="0x7f04003e" />
     <public type="layout" name="system_window_decorators" id="0x7f04003f" />
+    <public type="layout" name="seekbar_dialog" id="0x7f040040" />
     <public type="anim" name="hydraulic_brake_interpolator" id="0x7f050000" />
     <public type="anim" name="lights_out_in" id="0x7f050001" />
     <public type="anim" name="lights_out_out" id="0x7f050002" />
@@ -1239,6 +1246,17 @@
     <public type="id" name="body" id="0x7f0700f2" />
     <public type="id" name="corner" id="0x7f0700f3" />
     <public type="id" name="tvAvailMemory" id="0x7f0700f4" />
+    <public type="id" name="yun_bg" id="0x7f0700f5" />
+    <public type="id" name="yun_bg2" id="0x7f0700f6" />
+    <public type="id" name="wave_view" id="0x7f0700f7" />
+    <public type="id" name="yun_wifi" id="0x7f0700f8" />
+    <public type="id" name="yun_bluetooth" id="0x7f0700f9" />
+    <public type="id" name="yun_data" id="0x7f0700fa" />
+    <public type="id" name="yun_rotate" id="0x7f0700fb" />
+    <public type="id" name="yun_airplane" id="0x7f0700fc" />
+    <public type="id" name="yun_brightness_image" id="0x7f0700fd" />
+    <public type="id" name="yun_brightness_seekbar" id="0x7f0700fe" />
+    <public type="id" name="memory_image" id="0x7f0700ff" />
     <public type="color" name="notification_panel_solid_background" id="0x7f080000" />
     <public type="color" name="status_bar_recents_app_label_color" id="0x7f080001" />
     <public type="color" name="notification_list_shadow_top" id="0x7f080002" />
@@ -1581,6 +1599,7 @@
     <public type="dimen" name="panel_float" id="0x7f0c0051" />
     <public type="dimen" name="status_bar_recents_width" id="0x7f0c0052" />
     <public type="dimen" name="status_bar_recents_thumbnail_top_margin" id="0x7f0c0048" />
+    <public type="dimen" name="drawable_ring_size" id="0x7f0c0053" />
     <public type="plurals" name="status_bar_accessibility_recent_apps" id="0x7f0d0000" />
     <public type="style" name="RecentsStyle" id="0x7f0e0000" />
     <public type="style" name="Animation.RecentsActivity" id="0x7f0e0001" />

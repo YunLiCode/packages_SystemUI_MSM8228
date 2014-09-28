@@ -11,4 +11,5 @@
     <item type="drawable" name="notification_header_bg">#ff000000</item>
     <item type="drawable" name="system_bar_background">#ff000000</item>
     <item type="drawable" name="notification_icon_area_smoke">#aa000000</item>
+    <item type="drawable" name="water">#ff0066ee</item>
 </resources>

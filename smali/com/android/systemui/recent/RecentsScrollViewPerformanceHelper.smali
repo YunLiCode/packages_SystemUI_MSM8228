@@ -209,7 +209,7 @@
 
     const/high16 v5, 0x3f800000
 
-    const/high16 v6, -0x34000000
+    const/4 v6, 0x0
 
     const/4 v7, 0x0
 
@@ -527,7 +527,7 @@
 
     iget-object v1, v0, Lcom/android/systemui/recent/RecentsScrollViewPerformanceHelper;->mBlackPaint:Landroid/graphics/Paint;
 
-    const/high16 v2, -0x1000000
+    const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 

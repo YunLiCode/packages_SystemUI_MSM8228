@@ -20,6 +20,7 @@ CHANGELOG:
 		airplane
 		bluetooth
 		gps
+		clean
 
 
 > new layout
@@ -29,6 +30,7 @@ CHANGELOG:
 		quick_settings_user
 		status_bar_expanded
 		status_bar_expanded_header
+		status_bar_recent_panel_include_clean
 
 >new  quciksetting icon
 
@@ -47,4 +49,6 @@ CHANGELOG:
 		fullscreen pull
 		round screen
 		
+> new design
 
+		Recentapp ui

@@ -243,4 +243,15 @@
     <item type="id" name="body">false</item>
     <item type="id" name="corner">false</item>
     <item type="id" name="tvAvailMemory">false</item>
+    <item type="id" name="yun_bg">false</item>
+    <item type="id" name="yun_bg2">false</item>
+    <item type="id" name="wave_view">false</item>
+    <item type="id" name="yun_wifi">false</item>
+    <item type="id" name="yun_bluetooth">false</item>
+    <item type="id" name="yun_data">false</item>
+    <item type="id" name="yun_rotate">false</item>
+    <item type="id" name="yun_airplane">false</item>
+    <item type="id" name="yun_brightness_image">false</item>
+    <item type="id" name="yun_brightness_seekbar">false</item>
+    <item type="id" name="memory_image">false</item>
 </resources>

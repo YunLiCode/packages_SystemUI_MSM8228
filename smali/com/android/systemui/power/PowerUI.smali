@@ -878,7 +878,7 @@
     .line 262
     new-instance v2, Landroid/content/Intent;
 
-    const-string v5, "android.intent.action.POWER_USAGE_SUMMARY"
+    const-string v5, "android.intent.action.BATTERY_USAGE_SUMMARY"
 
     invoke-direct {v2, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 

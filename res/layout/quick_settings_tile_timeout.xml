@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/timeout_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
         <ImageView android:id="@id/timeout_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-        <ImageView android:id="@id/on_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_light_on" android:paddingBottom="10dp"   />
+        <ImageView android:id="@id/on_indicator" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/toolbar_light_on" />
     </RelativeLayout>
-    <TextView android:gravity="top|center" android:layout_gravity="top|center" android:id="@id/timeout_textview" android:paddingTop="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeout" style="@style/TextAppearance.QuickSettings.TileView" />
+    <TextView android:gravity="top|center" android:layout_gravity="top|center" android:id="@id/timeout_textview" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeout" style="@style/TextAppearance.QuickSettings.TileView" />
 </LinearLayout>

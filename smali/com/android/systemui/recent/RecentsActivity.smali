@@ -22,7 +22,7 @@
 
 .field private mActivityManager:Landroid/app/ActivityManager;
 
-.field private mCleanRecentsBtn:Landroid/widget/ImageButton;
+.field private mCleanRecentsBtn:Landroid/widget/ImageView;
 
 .field mermeoryimage:Landroid/widget/ImageView;
 
@@ -405,6 +405,122 @@
     goto :goto_2
 .end method
 
+.method private prepareStyle31Animation()Landroid/animation/Animator;
+    .locals 15
+
+    .prologue
+    const-wide/16 v13, 0x5dc
+
+    const-wide/16 v11, 0x4b0
+
+    const/4 v10, 0x1
+
+    const/4 v9, 0x0
+
+    const/4 v8, 0x2
+
+    .line 80
+    new-instance v0, Landroid/animation/AnimatorSet;
+
+    invoke-direct {v0}, Landroid/animation/AnimatorSet;-><init>()V
+
+    .line 81
+    .local v0, "animation":Landroid/animation/AnimatorSet;
+    iget-object v4, p0, Lcom/android/systemui/recent/RecentsActivity;->percent:Ljava/lang/Integer;
+
+    invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
+
+    move-result v4
+
+    int-to-float v3, v4
+
+    .line 82
+    .local v3, "percentage":F
+    sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    invoke-virtual {v4, v3}, Ljava/io/PrintStream;->println(F)V
+
+    .line 85
+    iget-object v4, p0, Lcom/android/systemui/recent/RecentsActivity;->drawable:Lcom/android/systemui/recent/CircularProgressDrawable;
+
+    const-string v5, "progress"
+
+    new-array v6, v8, [F
+
+    const/4 v7, 0x0
+
+    aput v7, v6, v9
+
+    const/high16 v7, 0x42c80000
+
+    div-float v7, v3, v7
+
+    aput v7, v6, v10
+
+    invoke-static {v4, v5, v6}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
+
+    move-result-object v2
+
+    .line 86
+    .local v2, "invertedProgress":Landroid/animation/ObjectAnimator;
+    invoke-virtual {v2, v11, v12}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
+
+    .line 87
+    invoke-virtual {v2, v13, v14}, Landroid/animation/ObjectAnimator;->setStartDelay(J)V
+
+    .line 88
+    new-instance v4, Landroid/view/animation/OvershootInterpolator;
+
+    invoke-direct {v4}, Landroid/view/animation/OvershootInterpolator;-><init>()V
+
+    invoke-virtual {v2, v4}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+
+    .line 89
+    iget-object v4, p0, Lcom/android/systemui/recent/RecentsActivity;->drawable:Lcom/android/systemui/recent/CircularProgressDrawable;
+
+    const-string v5, "circleScale"
+
+    new-array v6, v8, [F
+
+    fill-array-data v6, :array_0
+
+    invoke-static {v4, v5, v6}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
+
+    move-result-object v1
+
+    .line 90
+    .local v1, "invertedCircle":Landroid/animation/Animator;
+    invoke-virtual {v1, v11, v12}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
+
+    .line 91
+    invoke-virtual {v1, v13, v14}, Landroid/animation/Animator;->setStartDelay(J)V
+
+    .line 92
+    new-instance v4, Landroid/view/animation/OvershootInterpolator;
+
+    invoke-direct {v4}, Landroid/view/animation/OvershootInterpolator;-><init>()V
+
+    invoke-virtual {v1, v4}, Landroid/animation/Animator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
+
+    .line 93
+    new-array v4, v8, [Landroid/animation/Animator;
+
+    aput-object v2, v4, v9
+
+    aput-object v1, v4, v10
+
+    invoke-virtual {v0, v4}, Landroid/animation/AnimatorSet;->playTogether([Landroid/animation/Animator;)V
+
+    .line 94
+    return-object v0
+
+    .line 89
+    :array_0
+    .array-data 4
+        0x0
+        0x3f666666
+    .end array-data
+.end method
 .method private prepareStyle3Animation()Landroid/animation/Animator;
     .locals 12
 
@@ -624,38 +740,7 @@
 .end method
 
 
-# virtual methods
-.method public donghua(Landroid/view/View;)V
-    .locals 1
-    .param p1, "view"    # Landroid/view/View;
 
-    .prologue
-    .line 57
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
-
-    if-eqz v0, :cond_0
-
-    .line 58
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
-
-    invoke-virtual {v0}, Landroid/animation/Animator;->cancel()V
-
-    .line 63
-    :cond_0
-    invoke-direct {p0}, Lcom/android/systemui/recent/RecentsActivity;->prepareStyle3Animation()Landroid/animation/Animator;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
-
-    .line 64
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
-
-    invoke-virtual {v0}, Landroid/animation/Animator;->start()V
-
-    .line 65
-    return-void
-.end method
 
 
 .method static synthetic access$000()Ljava/lang/String;
@@ -701,13 +786,13 @@
     return v0
 .end method
 
-.method static synthetic access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageButton;
+.method static synthetic access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageView;
     .locals 1
     .param p0, "x0"    # Lcom/android/systemui/recent/RecentsActivity;
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -2226,6 +2311,70 @@
     goto :goto_0
 .end method
 
+# virtual methods
+.method public donghua()V
+    .locals 1
+
+    .prologue
+    .line 58
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
+
+    if-eqz v0, :cond_0
+
+    .line 59
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
+
+    invoke-virtual {v0}, Landroid/animation/Animator;->cancel()V
+
+    .line 61
+    :cond_0
+    invoke-direct {p0}, Lcom/android/systemui/recent/RecentsActivity;->prepareStyle3Animation()Landroid/animation/Animator;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
+
+    .line 62
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
+
+    invoke-virtual {v0}, Landroid/animation/Animator;->start()V
+
+    .line 63
+    return-void
+.end method
+
+.method public donghua1()V
+    .locals 1
+
+    .prologue
+    .line 73
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
+
+    if-eqz v0, :cond_0
+
+    .line 74
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
+
+    invoke-virtual {v0}, Landroid/animation/Animator;->cancel()V
+
+    .line 76
+    :cond_0
+    invoke-direct {p0}, Lcom/android/systemui/recent/RecentsActivity;->prepareStyle31Animation()Landroid/animation/Animator;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
+
+    .line 77
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity;->currentAnimation:Landroid/animation/Animator;
+
+    invoke-virtual {v0}, Landroid/animation/Animator;->start()V
+
+    .line 78
+    return-void
+.end method
+
+
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 4
     .param p1, "savedInstanceState"    # Landroid/os/Bundle;
@@ -2239,6 +2388,9 @@
     invoke-direct {p0}, Lcom/android/systemui/recent/RecentsActivity;->wallpaper()V
     
     invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsActivity;->setup()I
+    
+    invoke-virtual {p0}, Lcom/android/systemui/recent/RecentsActivity;->donghua1()V
+
     
     .line 44
     const-string v0, "errorf"
@@ -2301,23 +2453,23 @@
 
     move-result-object v1
 
-    check-cast v1, Landroid/widget/ImageButton;
+    check-cast v1, Landroid/widget/ImageView;
 
-    iput-object v1, p0, Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
+    iput-object v1, p0, Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
 
     .line 197
-    iget-object v1, p0, Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
+    iget-object v1, p0, Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
 
     if-eqz v1, :cond_0
 
     .line 198
-    iget-object v1, p0, Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
+    iget-object v1, p0, Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
 
     new-instance v2, Lcom/android/systemui/recent/RecentsActivity$2;
 
     invoke-direct {v2, p0}, Lcom/android/systemui/recent/RecentsActivity$2;-><init>(Lcom/android/systemui/recent/RecentsActivity;)V
 
-    invoke-virtual {v1, v2}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 222
     :cond_0
@@ -2429,7 +2581,7 @@
     const-wide/16 v11, 0x64
 
     .line 40
-    const v5, 0x7f0700ff
+    const v5, 0x7f070097
 
     invoke-virtual {p0, v5}, Lcom/android/systemui/recent/RecentsActivity;->findViewById(I)Landroid/view/View;
 

@@ -45,8 +45,8 @@
 
     iget-object v0, v0, Lcom/android/systemui/recent/RecentsActivity$2;->this$0:Lcom/android/systemui/recent/RecentsActivity;
 
-    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageButton;
+    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -57,14 +57,14 @@
 
     iget-object v0, v0, Lcom/android/systemui/recent/RecentsActivity$2;->this$0:Lcom/android/systemui/recent/RecentsActivity;
 
-    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageButton;
+    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     .line 215
     :cond_0
@@ -80,8 +80,8 @@
 
     iget-object v0, v0, Lcom/android/systemui/recent/RecentsActivity$2;->this$0:Lcom/android/systemui/recent/RecentsActivity;
 
-    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageButton;
+    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageView;
 
     move-result-object v0
 
@@ -92,14 +92,14 @@
 
     iget-object v0, v0, Lcom/android/systemui/recent/RecentsActivity$2;->this$0:Lcom/android/systemui/recent/RecentsActivity;
 
-    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageButton;
+    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageView;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     .line 208
     :cond_0

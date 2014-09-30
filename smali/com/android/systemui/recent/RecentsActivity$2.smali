@@ -37,21 +37,27 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 2
+    .locals 3
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
     .line 201
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity$2;->this$0:Lcom/android/systemui/recent/RecentsActivity;
 
-    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageButton;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageButton;
+    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentsActivity;->donghua()V
+    
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity$2;->this$0:Lcom/android/systemui/recent/RecentsActivity;
+
+    # getter for: Lcom/android/systemui/recent/RecentsActivity;->mCleanRecentsBtn:Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/systemui/recent/RecentsActivity;->access$400(Lcom/android/systemui/recent/RecentsActivity;)Landroid/widget/ImageView;
+
+
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     .line 202
     iget-object v0, p0, Lcom/android/systemui/recent/RecentsActivity$2;->this$0:Lcom/android/systemui/recent/RecentsActivity;

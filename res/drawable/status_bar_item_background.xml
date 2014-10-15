@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layer-list android:opacity="translucent"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@android:drawable/tab_selected_v4" />
+    <item android:drawable="@android:drawable/sym_keyboard_num1" />
 </layer-list>

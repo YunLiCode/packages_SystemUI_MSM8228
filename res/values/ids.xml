@@ -254,4 +254,5 @@
     <item type="id" name="yun_brightness_image">false</item>
     <item type="id" name="yun_brightness_seekbar">false</item>
     <item type="id" name="memory_image">false</item>
+    <item type="id" name="yun_bg_notifiction">false</item>
 </resources>

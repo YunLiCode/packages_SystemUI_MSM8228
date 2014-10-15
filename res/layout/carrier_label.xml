@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:background="@drawable/ic_notify_bg" android:layout_width="fill_parent" android:layout_height="300.0dip"
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="300.0dip"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <ImageView android:id="@id/settings_button" android:layout_width="180.0dip" android:layout_height="300.0dip" android:src="@drawable/ic_notify_settings" android:scaleType="centerCrop" android:layout_below="@id/brightness_icon" android:layout_alignParentRight="true" android:contentDescription="@string/accessibility_desc_quick_settings" />
-    <ImageView android:id="@id/notification_button" android:visibility="gone" android:layout_width="180.0dip" android:layout_height="300.0dip" android:src="@drawable/ic_notifications" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:contentDescription="@string/accessibility_notifications_button" />
+    <TextView
+    	android:id="@id/settings_button"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textColor="#ffffff"
+             android:text="开关"
+             android:visibility="gone"
+             android:layout_centerInParent="true"
+    	/>
+    <TextView
+    	android:id="@id/notification_button"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerInParent="true"
+    	android:textColor="#ffffff"
+              android:text="通知"
+    	/>
 </RelativeLayout>

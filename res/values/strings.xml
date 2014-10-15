@@ -2,7 +2,7 @@
 <resources>
     <string name="config_statusBarComponent">com.android.systemui.statusbar.phone.PhoneStatusBar</string>
     <string name="config_systemBarComponent">com.android.systemui.statusbar.tablet.TabletStatusBar</string>
-    <string name="system_ui_date_pattern">@android:string/system_ui_date_pattern</string>
+    <string name="system_ui_date_pattern">@android:string/permlab_preventpower</string>
     <string name="app_label">System UI</string>
     <string name="status_bar_clear_all_button">Clear</string>
     <string name="status_bar_do_not_disturb_button">Do not disturb</string>

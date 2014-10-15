@@ -72,7 +72,7 @@
     :goto_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    iget-object v2, v2, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v2, v2, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mSettingsButton:Landroid/widget/TextView;
 
     if-eqz v2, :cond_0
 
@@ -85,12 +85,12 @@
     .line 325
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$2;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    iget-object v2, v2, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v2, v2, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mSettingsButton:Landroid/widget/TextView;
 
     if-eqz v0, :cond_4
 
     :goto_1
-    invoke-virtual {v2, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 327
     :cond_0

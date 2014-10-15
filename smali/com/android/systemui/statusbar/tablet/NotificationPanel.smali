@@ -44,7 +44,7 @@
 
 .field mHasClearableNotifications:Z
 
-.field mNotificationButton:Landroid/widget/ImageView;
+.field mNotificationButton:Landroid/widget/TextView;
 
 .field mNotificationCount:I
 
@@ -52,7 +52,7 @@
 
 .field private mPreDrawListener:Landroid/view/ViewTreeObserver$OnPreDrawListener;
 
-.field mSettingsButton:Landroid/widget/ImageView;
+.field mSettingsButton:Landroid/widget/TextView;
 
 .field mSettingsView:Landroid/view/View;
 
@@ -519,9 +519,9 @@
 
     .prologue
     .line 242
-    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    invoke-virtual {v0}, Landroid/widget/ImageView;->isEnabled()Z
+    invoke-virtual {v0}, Landroid/widget/TextView;->isEnabled()Z
 
     move-result v0
 
@@ -590,9 +590,9 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/widget/ImageView;
+    check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
     .line 99
     const v0, 0x7f070081
@@ -601,9 +601,9 @@
 
     move-result-object v0
 
-    check-cast v0, Landroid/widget/ImageView;
+    check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mNotificationButton:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mNotificationButton:Landroid/widget/TextView;
 
     .line 101
     const v0, 0x7f0700c5
@@ -800,28 +800,28 @@
     const/4 v2, 0x0
 
     .line 456
-    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 457
-    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
     const v1, 0x7f020032
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setImageResource(I)V
 
     .line 460
-    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mNotificationButton:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mNotificationButton:Landroid/widget/TextView;
 
-    invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 461
-    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mNotificationButton:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mNotificationButton:Landroid/widget/TextView;
 
     const v1, 0x7f020022
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setImageResource(I)V
 
     .line 462
     return-void
@@ -895,24 +895,24 @@
 
     .prologue
     .line 448
-    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
     .line 449
-    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setEnabled(Z)V
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 450
-    iget-object v1, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
     if-eqz p1, :cond_1
 
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 452
     :cond_0
@@ -1156,13 +1156,13 @@
     .line 305
     .local v0, "settingsVisible":Z
     :goto_0
-    iget-object v4, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v4, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
     if-nez v0, :cond_1
 
-    iget-object v2, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mSettingsButton:Landroid/widget/TextView;
 
-    invoke-virtual {v2}, Landroid/widget/ImageView;->isEnabled()Z
+    invoke-virtual {v2}, Landroid/widget/TextView;->isEnabled()Z
 
     move-result v2
 
@@ -1171,15 +1171,15 @@
     move v2, v1
 
     :goto_1
-    invoke-virtual {v4, v2}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v4, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 306
-    iget-object v2, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mNotificationButton:Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/tablet/NotificationPanel;->mNotificationButton:Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
 
     :goto_2
-    invoke-virtual {v2, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {v2, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 307
     return-void

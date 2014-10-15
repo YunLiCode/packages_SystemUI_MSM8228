@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@android:drawable/list_selector_background_default" />
-    <item android:drawable="@android:drawable/list_section_header_holo_dark" />
+    <item android:state_pressed="true" android:drawable="@android:drawable/jog_tab_right_sound_off" />
+    <item android:drawable="@android:drawable/jog_tab_right_confirm_gray" />
 </selector>

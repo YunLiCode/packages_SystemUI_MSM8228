@@ -44,7 +44,7 @@
     .line 783
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettings$25;->this$0:Lcom/android/systemui/statusbar/phone/QuickSettings;
 
-    const-string v1, "android.intent.action.BATTERY_USAGE_SUMMARY"
+    const-string v1, "android.intent.action.POWER_USAGE_SUMMARY"
 
     # invokes: Lcom/android/systemui/statusbar/phone/QuickSettings;->startSettingsActivity(Ljava/lang/String;)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/QuickSettings;->access$500(Lcom/android/systemui/statusbar/phone/QuickSettings;Ljava/lang/String;)V

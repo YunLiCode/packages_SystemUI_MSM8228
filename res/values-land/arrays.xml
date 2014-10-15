@@ -3,19 +3,19 @@
     <array name="navbar_search_targets">
         <item>@null</item>
         <item>@null</item>
-        <item>@android:drawable/ic_action_assist_generic</item>
+        <item>@android:drawable/ic_audio_notification_am</item>
         <item>@null</item>
     </array>
     <array name="navbar_search_target_descriptions">
         <item>@null</item>
         <item>@null</item>
-        <item>@android:string/description_target_search</item>
+        <item>@android:string/sms_premium_short_code_details</item>
         <item>@null</item>
     </array>
     <array name="navbar_search_direction_descriptions">
         <item>@null</item>
         <item>@null</item>
-        <item>@android:string/description_direction_left</item>
+        <item>@android:string/sms_control_title</item>
         <item>@null</item>
     </array>
 </resources>

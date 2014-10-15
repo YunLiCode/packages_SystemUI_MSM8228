@@ -1257,6 +1257,7 @@
     <public type="id" name="yun_brightness_image" id="0x7f0700fd" />
     <public type="id" name="yun_brightness_seekbar" id="0x7f0700fe" />
     <public type="id" name="memory_image" id="0x7f0700ff" />
+    <public type="id" name="yun_bg_notifiction" id="0x7f070100" />
     <public type="color" name="notification_panel_solid_background" id="0x7f080000" />
     <public type="color" name="status_bar_recents_app_label_color" id="0x7f080001" />
     <public type="color" name="notification_list_shadow_top" id="0x7f080002" />

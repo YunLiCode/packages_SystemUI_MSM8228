@@ -21,6 +21,7 @@ CHANGELOG:
 		bluetooth
 		gps
 		clean
+		screen on/off time
 
 
 > new layout
@@ -48,7 +49,8 @@ CHANGELOG:
 
 		fullscreen pull
 		round screen
-		
+
 > new design
 
 		Recentapp ui
+		expanded bar ui
